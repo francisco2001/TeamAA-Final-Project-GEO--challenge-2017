@@ -1,0 +1,13 @@
+Downloading Landsat data from Earth Explorer/espa
+
+To be able to download the data, you need to register on "https://urs.earthdata.nasa.gov/" and get a username and password. To pass the authentication by the website, you need to set the username and password on the machine (only first time) using setNASAauth function. Just specify the username and password in the function for the first time, and then the ModisDownload function can use it everytime you need to download the data.
+
+For the first time only, fill the user name and password in the "setNASAauth('username',"password")" function
+
+Once you register you will be able to proceed to the download of the data.It is important to mention that dates needs to be filled with an specific format. The dates of each image needs to be filled as follows:
+
+From: ('year.month.day') to: ('year.month.day')
+dates <- (from:('year.month.day'), to =('year.month.day') )
+
+
+
